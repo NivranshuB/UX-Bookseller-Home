@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--High-fidelity prototype for Book Program Discussion website: Homepage and Registration form-->
+<!--Written by: Nivranshu Bose | 27-05-2021-->
+<!--Adapted from 'Start page' template w3css: https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm-->
+<!--Utilises icons from: Font Awesome-->
+
+<html lang="en">
+<title>Book Program Discussion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="Book-discussion-logo.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:150px}
+.fa-caret-right {font-size: 60px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="navbar custom-background-color">
+    <a href="#" class="navbutton-selected">Home</a>
+    <a href="#" class="navbutton">Catalogue</a>
+    <a href="#" class="navbutton">My Profile</a>
+    <a href="#" class="navbutton">Group</a>
+    <a href="#" class="navbutton">About</a>
+    <form class="search-bar">
+      <input type="text" placeholder="Book search...">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <a href="#" class="navbutton login-button custom-background-color">Login</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header-bar">
+  <img class="logo-image" src="Book-discussion-logo.png" alt="Book program discussion logo"></img>
+  <h1 class="header-title custom-color">BOOK PROGRAM DISCUSSION</h1>
+  <button id="trigger-modal" class="register-button">Register</button>
+</header>
+
+<!-- First Grid -->
+<div class="content-section">
+
+  <div class="join-group-section">
+    <div class="join-group-title" style="text-align: center;">
+      <h1 class="custom-color">Join a Group</h1>
+    </div>
+    <div class="library-group">
+      <button class="join-group-button">
+        <h4 class="custom-color">Local library group</h4>
+        <!--Img src: https://unsplash.com/photos/NIJuEQw0RKg-->
+        <img class="join-group-image" src="library.jpg" alt="Join local library group"></img>
+      </button>      
+    </div>
+    <div class="online-group">
+      <button class="join-group-button">
+        <h4 class="custom-color">Online group</h4>
+        <!--Img src: https://unsplash.com/photos/EeS69TTPQ18-->
+        <img class="join-group-image" src="online-group.jpg" alt="Join online group"></img>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="popular-books-section">
+    <div class="popular-books-title">
+      <h1 class="custom-color">Popular books</h1>
+    </div>
+    <div>
+      <button class="book-button">
+        <!--Img src: https://unsplash.com/photos/H-LIL57PHCc-->
+        <img class="book-image" src="book1.jpg" alt="Matt Ridley: How innovation works"></img>
+      </button>
+      <button class="book-button">
+        <!--Img src: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1523909873l/38321944.jpg-->
+        <img class="book-image" src="book2.jpg" alt="Mark Sullivan: Beneath a scarlet sky"></img>
+      </button>
+      <button class="book-button">
+        <!--Img src: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1591946396l/50720434.jpg –-->
+        <img class="book-image" src="book3.jpg" alt="Wendy Webb: The haunting of Brynn Wilder"></img>
+      </button>
+      <button class="book-button">
+        <i class="fa fa-caret-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="news-section">
+    <div class="news-title" style="text-align: center;">
+      <h1 class="custom-color">Latest news</h1>
+    </div>
+    <div class="news-content">
+      <button class="news-button">
+        <!--Img src: https://unsplash.com/photos/89WgWuyK2Jo-->
+        <img class="news-item-image" src="news-item.jpg" alt="News article: New UX design book"></img>
+        <p style="margin-bottom: 10px;">New bestselling book, all about UX design!</p>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container custom-background-color w3-padding-32" style="color: wheat; text-align: center; box-shadow: 2px 2px 10px black;">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: "We read to know we are not alone"</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+</footer>
+
+<!-- The Modal -->
+<div id="bookclubrego" class="modal-form">
+  <form class="form-content">
+    <button class="close">&times;</button>
+    <img class="logo-image" src="Book-discussion-logo.png" alt="Book program discussion logo" style="float: left; height: 70px; width: 80px;"></img>
+    <h2 registration-form-title style="text-align: center;">Registration form</h2><br><br>
+    <div id="userDetails">
+      <div class="input-field">
+        <label for="gname">Given name:</label>
+        <input type="text" id="gname" name="gname"><br>
+      </div>
+      <div class="input-field">
+        <label for="sname">Surname:</label>
+        <input type="text" id="sname" name="sname"><br><br>
+      </div>
+      <div class="input-field">
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="uname"><br>
+      </div>
+      <div class="input-field">
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password"><br><br><br><br>
+      </div>     
+    </div>
+
+    <div id="contacts">
+      <div class="input-field">
+        <label for="m-number">Mobile number:</label>
+        <input type="text" id="m-number" name="m-number"><br>
+      </div>
+      <div class="input-field">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br><br><br>
+      </div>     
+    </div>
+
+    <div id="addresses">
+      <div class="input-field">
+        <label for="h-address">Home address:</label>
+        <input type="text" id="h-address" name="h-address"><br>
+      </div>  
+      <div class="input-field">
+        <label for="w-address">Work address:</label>
+        <input type="text" id="w-address" name="w-address"><br><br>
+      </div>      
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
